@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Open Labs Checkin System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+{% block content %}
+<h1>Open Labs</h1>
+<div class="container">
+    <form class="checkinform" method="POST" action="{{ url_for('check')}}">
+        <input type="submit" name="checkin" value="Check in" id="checkinbtn">
+        <input type="submit" name="checkout" value="Check out" id="checkoutbtn">
+    </form>
+
+{% endblock %}
+</body>
+
+</html>
+
+
+
+
+
